@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 05 Task 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .spacer {
+            height: 1000px;
+        }
+
+        #lazyTarget {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="status"></p>
+    <p id="result"></p>
+
+    <button id="loadAdvanced">Load Advanced Feature</button>
+    <p id="advancedOutput"></p>
+
+    <div class="spacer"></div>
+
+    <div id="lazyTarget">
+        <h2>Lazy Section</h2>
+        <p id="lazyContent">Scroll down to load this component...</p>
+    </div>
+
+    <script type="module" src="./modules/app.mjs"></script>
+</body>
+</html>
