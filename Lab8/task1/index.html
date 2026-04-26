@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lab 8.1 - Flyweight Forest</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Lab 8.1 - Flyweight Pattern</h1>
+
+    <section class="controls">
+      <label for="treeCount">Tree count:</label>
+      <input id="treeCount" type="number" value="10000" min="1" />
+
+      <button id="generateForest">Generate Forest</button>
+      <button id="clearForest">Clear</button>
+      <button id="runBenchmark">Run Benchmark</button>
+    </section>
+
+    <canvas id="forestCanvas" width="1000" height="600"></canvas>
+
+    <section>
+      <h2>Stats</h2>
+      <pre id="stats"></pre>
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

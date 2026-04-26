@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+button,
+input {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+canvas {
+  display: block;
+  background: #dff5df;
+  border: 2px solid #333;
+  max-width: 100%;
+}
+
+pre {
+  background: #111;
+  color: #0f0;
+  padding: 16px;
+  overflow-x: auto;
+}

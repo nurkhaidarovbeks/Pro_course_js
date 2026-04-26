@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lab 8.2 - Event Delegation Todo List</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Lab 8.2 - Event Delegation Pattern</h1>
+
+    <form id="addForm" class="controls">
+      <input
+        id="todoInput"
+        type="text"
+        placeholder="New task..."
+      />
+
+      <select id="priorityInput">
+        <option value="high">High</option>
+        <option value="normal" selected>Normal</option>
+        <option value="low">Low</option>
+      </select>
+
+      <button type="submit">Add Item</button>
+    </form>
+
+    <section class="controls">
+      <button id="generateItems">Generate 1000 Items</button>
+      <button id="runPerformanceTest">Run Performance Test</button>
+    </section>
+
+    <section>
+      <h2>Stats</h2>
+      <pre id="stats"></pre>
+    </section>
+
+    <section>
+      <h2>Todo List</h2>
+      <div id="todo-list" class="todo-list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
